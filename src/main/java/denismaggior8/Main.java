@@ -22,6 +22,9 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
 
+        String inputPDFPath = args[0];
+        int year =  Integer.parseInt(args[1]);
+
         Coordinates[] coordinatesArray = new Coordinates[]{
                 // gennaio
                 new Coordinates(35.49, 170.53, 186.32, 319.44, "gennaio", 1),
@@ -52,7 +55,7 @@ public class Main {
         for (Coordinates coordinates : coordinatesArray) {
 
             try {
-                FileInputStream inputStream = new FileInputStream(args[0]);
+                FileInputStream inputStream = new FileInputStream(inputPDFPath);
                 byte[] pdfBytes = IOUtils.toByteArray(inputStream);
                 PDDocument pddDoc = PDDocument.load(pdfBytes);
                 PDFTextStripperByArea stripper = new PDFTextStripperByArea();
@@ -62,11 +65,8 @@ public class Main {
                 stripper.addRegion(coordinates.getLabel(), rect);
                 stripper.extractRegions(pddDoc.getPage(1));
                 String string = stripper.getTextForRegion(coordinates.getLabel());
-                //System.out.println(string);
-                Stream<String> linesStream = Arrays.stream(string.split("\n"));
-                List<String> collections = linesStream.filter(s -> s.matches("(^\\d*) (\\S*) (.*$)")).collect(Collectors.toList());
 
-                for (String dateString : collections) {
+                for (String dateString : string.split("\n")) {
                     //System.out.println(dateString);
                     // Create a Pattern object
                     Pattern r = Pattern.compile("(^\\d*) (\\S*) (.*$)");
@@ -78,7 +78,7 @@ public class Main {
                     if (m.find()) {
                         int day = Integer.parseInt(m.group(1));
 
-                        LocalDateTime ldt = LocalDateTime.from(LocalDate.of(2020, coordinates.id, day).atStartOfDay())
+                        LocalDateTime ldt = LocalDateTime.from(LocalDate.of(year, coordinates.id, day).atStartOfDay())
                                 .minusDays(1)
                                 .withHour(21)
                                 .minusMinutes(0)
