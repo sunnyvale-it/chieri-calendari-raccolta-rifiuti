@@ -16,6 +16,8 @@ Even if it is far from being considered a finished good, I decided to open sourc
 
 Before using the application, open the class `denismaggior8.Main` and modify the `coordinatesArray` elements with the PDF coordinates where the text resides. Grab them using a PDF reader (I used macOS Preview).
 
+Down in the main class, for each coordinate element modify the regex in order to grab the data you need.
+
 ## Build the application
 
 To build the application (using Maven) run:
@@ -48,7 +50,7 @@ ORG,28/12/2020,09:00 PM,28/12/2020,09:10 PM,FALSE,ORG
 ...
 ```
 
-The output lines can be collected in a .csv file and are already formatted in a way that can be inported in a Google Calendar.
+The output lines can be collected in a .csv file and are already formatted in a way that can be imported in a Google Calendar.
 
 ## Final thought
 
