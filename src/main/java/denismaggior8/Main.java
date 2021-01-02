@@ -51,7 +51,7 @@ public class Main {
                 // dicembre
                 new Coordinates(621.69, 874.84, 183.21, 297.97, "dicembre", 12)
         };
-
+        System.out.println("Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Location");
         for (Coordinates coordinates : coordinatesArray) {
 
             try {
@@ -65,7 +65,6 @@ public class Main {
                 stripper.addRegion(coordinates.getLabel(), rect);
                 stripper.extractRegions(pddDoc.getPage(1));
                 String string = stripper.getTextForRegion(coordinates.getLabel());
-                System.out.println("Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Location");
                 for (String dateString : string.split("\n")) {
                     //System.out.println(dateString);
                     // Create a Pattern object
