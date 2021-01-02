@@ -34,7 +34,7 @@ To run the application type (please change the <YEAR> placeholder with the year,
 $ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar /path/to/file.pdf <YEAR>
 ```
 
-The provided source code works with this [PDF](PDFs/CHIERI3B.pdf)
+The provided source code works with this [PDF](PDFs/CHIERI3B_2021.pdf)
 
 ```console
 $ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar PDFs/CHIERI3B.pdf 2020

@@ -27,29 +27,29 @@ public class Main {
 
         Coordinates[] coordinatesArray = new Coordinates[]{
                 // gennaio
-                new Coordinates(35.49, 170.53, 186.32, 319.44, "gennaio", 1),
+                new Coordinates(37.87, 197.2, 183.21, 297.97, "gennaio", 1),
                 // febbraio
-                new Coordinates(171.78, 170.53, 186.32, 319.44, "febbraio", 2),
+                new Coordinates(231.47, 196.63, 183.21, 297.97, "febbraio", 2),
                 // marzo
-                new Coordinates(424.47, 170.53, 186.32, 319.44, "marzo", 3),
+                new Coordinates(426.87, 196.73, 183.21, 297.97, "marzo", 3),
                 // aprile
-                new Coordinates(619.23, 170.53, 186.32, 319.44, "aprile", 4),
+                new Coordinates(620.96, 196.12, 183.21, 297.97, "aprile", 4),
                 // maggio
-                new Coordinates(35.38, 500.88, 186.32, 319.44, "maggio", 5),
+                new Coordinates(36.93, 536.11, 183.21, 297.97, "maggio", 5),
                 // giugno
-                new Coordinates(230.06, 500.88, 186.32, 319.44, "giugno", 6),
+                new Coordinates(232.91, 535.51, 183.21, 297.97, "giugno", 6),
                 // luglio
-                new Coordinates(425.7, 500.88, 186.32, 319.44, "luglio", 7),
+                new Coordinates(424.99, 536.16, 183.21, 297.97, "luglio", 7),
                 // agosto
-                new Coordinates(620.07, 500.88, 186.32, 319.44, "agosto", 8),
+                new Coordinates(622.19, 535.99, 183.21, 297.97, "agosto", 8),
                 // settembre
-                new Coordinates(35.49, 827.07, 186.32, 319.44, "settembre", 9),
+                new Coordinates(37.36, 876.71, 183.21, 297.97, "settembre", 9),
                 // ottobre
-                new Coordinates(230.23, 827.07, 186.32, 319.44, "ottobre", 10),
+                new Coordinates(232.17, 875.69, 183.21, 297.97, "ottobre", 10),
                 // novembre
-                new Coordinates(425.3, 827.07, 186.32, 319.44, "novembre", 11),
+                new Coordinates(426.97, 875.39, 183.21, 297.97, "novembre", 11),
                 // dicembre
-                new Coordinates(619.7, 827.07, 186.32, 319.44, "dicembre", 12)
+                new Coordinates(621.69, 874.84, 183.21, 297.97, "dicembre", 12)
         };
 
         for (Coordinates coordinates : coordinatesArray) {
@@ -65,7 +65,7 @@ public class Main {
                 stripper.addRegion(coordinates.getLabel(), rect);
                 stripper.extractRegions(pddDoc.getPage(1));
                 String string = stripper.getTextForRegion(coordinates.getLabel());
-
+                System.out.println("Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Location");
                 for (String dateString : string.split("\n")) {
                     //System.out.println(dateString);
                     // Create a Pattern object
@@ -80,7 +80,7 @@ public class Main {
 
                         LocalDateTime ldt = LocalDateTime.from(LocalDate.of(year, coordinates.id, day).atStartOfDay())
                                 .minusDays(1)
-                                .withHour(21)
+                                .withHour(19)
                                 .minusMinutes(0)
                                 .withSecond(0);
 
