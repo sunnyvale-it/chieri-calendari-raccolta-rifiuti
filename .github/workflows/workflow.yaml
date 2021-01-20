@@ -3,8 +3,9 @@ name: update
 
 on:
   push:
-    #branches:
-    #  - master
+    branches:
+      - master
+      - development
     paths:
       - 'coordinates/**/*.csv'
   workflow_dispatch:
