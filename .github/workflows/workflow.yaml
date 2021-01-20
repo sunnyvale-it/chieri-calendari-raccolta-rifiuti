@@ -4,7 +4,7 @@ name: update
 on:
   push:
     branches:
-      - master
+      #- master
       - development
     paths:
       - 'coordinates/**'
