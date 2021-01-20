@@ -7,7 +7,7 @@ on:
       - master
       - development
     paths:
-      - 'coordinates/**/*.csv'
+      - 'coordinates/**'
   workflow_dispatch:
 
 jobs:
