@@ -6,8 +6,10 @@ on:
     branches:
       - master
       - development
-    #paths:
-    #  - 'coordinates/**'
+    paths:
+      - 'coordinates/**/*.csv'
+      - 'PDFs/**/*.pdf'
+      - 'pom.xml'
   workflow_dispatch:
 
 jobs:
