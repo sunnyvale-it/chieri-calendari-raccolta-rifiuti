@@ -35,6 +35,9 @@ jobs:
       - name: Run the application
         run: |
           ./run_me.sh
+      - name: 🍳 Shake & bake README
+        run: |
+          ./render_readme.sh
       - name: Publish calendar files
         run: |
           git config user.name "${GITHUB_ACTOR}"
@@ -42,6 +45,7 @@ jobs:
           git checkout "${GITHUB_REF}"
           git add CSVs
           git add ICSs
+          git add README.md
           git commit -am "Update dynamic content"
       - name: Push changes
         uses: ad-m/github-push-action@master
