@@ -6,8 +6,8 @@ on:
     branches:
       - master
       - development
-    paths:
-      - 'coordinates/**'
+    #paths:
+    #  - 'coordinates/**'
   workflow_dispatch:
 
 jobs:
