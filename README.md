@@ -32,6 +32,7 @@ To run the application type (please change the <YEAR> placeholder with the year,
 $ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar <ZONE> /path/to/file.pdf /path/to/coordinates_file.csv <YEAR> /path/to/output/csv /path/to/output/ics
 ```
 
+
 The provided source code works with this [PDF](PDFs/2021/CHIERI3B_2021.pdf)
 
 ```console
