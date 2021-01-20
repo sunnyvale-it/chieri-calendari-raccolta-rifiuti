@@ -24,4 +24,4 @@ jobs:
           java-version: 1.8
       - name: Build the application
         run: |
-          ./build_me.sh
+          mvn package
