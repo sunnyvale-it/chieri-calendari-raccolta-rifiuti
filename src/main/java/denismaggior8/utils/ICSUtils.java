@@ -36,10 +36,10 @@ public class ICSUtils {
 
     public void addEvent(String collection, LocalDateTime ldt, Coordinates coordinates){
 
-        net.fortuna.ical4j.model.DateTime dtStart = new DateTime (Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant()));
+        net.fortuna.ical4j.model.DateTime dtStart = new DateTime (Date.from(ldt.atZone(ZoneId.of("Europe/Rome")).toInstant()));
         //dtStart.setUtc(true);
 
-        net.fortuna.ical4j.model.DateTime dtEnd = new DateTime (Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant()));
+        net.fortuna.ical4j.model.DateTime dtEnd = new DateTime (Date.from(ldt.atZone(ZoneId.of("Europe/Rome")).toInstant()));
         //dtEnd.setUtc(true);
 
         VEvent event = new VEvent(dtStart,dtEnd, collection);
