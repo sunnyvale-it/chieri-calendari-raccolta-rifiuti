@@ -6,8 +6,7 @@ on:
     branches:
       - master
     paths:
-      - 'coordinates/**'
-      - 'PDFs/**'
+      - 'coordinates/**/*.csv'
   workflow_dispatch:
 
 jobs:
