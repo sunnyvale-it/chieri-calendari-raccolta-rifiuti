@@ -24,5 +24,4 @@ jobs:
           java-version: 1.8
       - name: Build the application
         run: |
-          cd ${GITHUB_WORKSPACE}/scripts/
           ./build_me.sh
