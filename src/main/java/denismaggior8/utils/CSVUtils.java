@@ -1,5 +1,7 @@
 package denismaggior8.utils;
 
+import denismaggior8.model.Coordinates;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,7 +18,7 @@ public class CSVUtils {
                 .append("\n");
     }
 
-    public void addLine(String collection, LocalDateTime ldt) {
+    public void addLine(String collection, LocalDateTime ldt, Coordinates coordinates) {
         sb
                 // Type of collection (Subject)
                 .append(collection)
@@ -42,7 +44,7 @@ public class CSVUtils {
                 .append(ldt.format(DateTimeFormatter.ofPattern("a")))
                 .append(",")
                 // All day event?
-                .append("TRUE")
+                .append((""+coordinates.isAllDayEvent()).toUpperCase())
                 .append(",")
                 // Description
                 .append(collection)

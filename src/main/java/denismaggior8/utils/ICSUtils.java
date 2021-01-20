@@ -1,5 +1,6 @@
 package denismaggior8.utils;
 
+import denismaggior8.model.Coordinates;
 import net.fortuna.ical4j.data.CalendarOutputter;
 import net.fortuna.ical4j.model.DateTime;
 import net.fortuna.ical4j.model.TimeZone;
@@ -9,6 +10,7 @@ import net.fortuna.ical4j.model.component.VEvent;
 import net.fortuna.ical4j.model.property.CalScale;
 import net.fortuna.ical4j.model.property.ProdId;
 import net.fortuna.ical4j.model.property.Version;
+import net.fortuna.ical4j.util.FixedUidGenerator;
 import net.fortuna.ical4j.util.RandomUidGenerator;
 import net.fortuna.ical4j.util.UidGenerator;
 
@@ -16,12 +18,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 
 public class ICSUtils {
 
     net.fortuna.ical4j.model.Calendar calendar = new net.fortuna.ical4j.model.Calendar();
     TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
-    TimeZone timezone = registry.getTimeZone("Etc/GMT+1");
+    TimeZone timezone = registry.getTimeZone("Europe/Rome");
 
     public ICSUtils(){
         calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
@@ -30,28 +34,12 @@ public class ICSUtils {
 
     }
 
-    public void addEvent(String collection, LocalDateTime ldt){
-        //Creating an event
-        java.util.Calendar startCal = java.util.Calendar.getInstance(timezone);
-        startCal.set(java.util.Calendar.YEAR, ldt.getYear());
-        startCal.set(java.util.Calendar.MONTH, ldt.getMonthValue());
-        startCal.set(java.util.Calendar.DAY_OF_MONTH, ldt.getDayOfMonth());
-        startCal.set(java.util.Calendar.HOUR_OF_DAY, ldt.getHour());
-        startCal.clear(ldt.getMinute());
-        startCal.clear(ldt.getSecond());
+    public void addEvent(String collection, LocalDateTime ldt, Coordinates coordinates){
 
-        java.util.Calendar endCal = java.util.Calendar.getInstance(timezone);
-        endCal.set(java.util.Calendar.YEAR, ldt.getYear());
-        endCal.set(java.util.Calendar.MONTH, ldt.getMonthValue());
-        endCal.set(java.util.Calendar.DAY_OF_MONTH, ldt.getDayOfMonth());
-        endCal.set(java.util.Calendar.HOUR_OF_DAY, ldt.getHour());
-        endCal.clear(ldt.getMinute());
-        endCal.clear(ldt.getSecond());
-
-        net.fortuna.ical4j.model.DateTime dtStart = new DateTime (startCal.getTime());
+        net.fortuna.ical4j.model.DateTime dtStart = new DateTime (Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant()));
         //dtStart.setUtc(true);
 
-        net.fortuna.ical4j.model.DateTime dtEnd = new DateTime(endCal.getTime());
+        net.fortuna.ical4j.model.DateTime dtEnd = new DateTime (Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant()));
         //dtEnd.setUtc(true);
 
         VEvent event = new VEvent(dtStart,dtEnd, collection);

@@ -17,7 +17,7 @@ public class Coordinates {
     int id;
     String regexp;
     LocalTime collectionTime;
-    boolean sallDayEvent;
+    boolean allDayEvent;
     int daysOffest;
     int hoursOffset;
     int minsOffset;

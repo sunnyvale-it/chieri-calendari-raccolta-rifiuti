@@ -73,8 +73,8 @@ public class Main {
 
                         String collection = m.group(3);
 
-                        csvUtils.addLine(collection, ldt);
-                        icsUtils.addEvent(collection, ldt);
+                        csvUtils.addLine(collection, ldt, coordinates);
+                        icsUtils.addEvent(collection, ldt, coordinates);
 
                     }
                 }
