@@ -46,7 +46,6 @@ jobs:
           git add CSVs
           git add ICSs
           git add README.md
-          git commit -am "Update dynamic content"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
