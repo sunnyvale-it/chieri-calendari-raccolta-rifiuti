@@ -14,9 +14,7 @@ Even if it is far from being considered a finished good, I decided to open sourc
 
 ## Adapt to your PDF calendar format
 
-Before using the application, open the class `denismaggior8.Main` and modify the `coordinatesArray` elements with the PDF coordinates where the text resides. Grab them using a PDF reader (I used macOS Preview).
-
-Down in the main class, for each coordinate element modify the regex in order to grab the data you need.
+Before using the application, provide a coordinates file in **coordinates/\<YEAR\>** (have a look of the existing as an example)
 
 ## Build the application
 
