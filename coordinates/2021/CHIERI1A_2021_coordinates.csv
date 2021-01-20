@@ -1,5 +1,5 @@
 #left,top,with,height,label,id,regexp,collection_time,all_day_event,days_offest,hours_offset,mins_offset
-37.87,197.2,183.21,297.97,gennaio,1,(^\d*) (\S*) (.*$),07:00,true,0,0,1
+37.87,197.2,183.21,297.97,gennaio,1,(^\d*) (\S*) (.*$),07:00,true,0,0,0
 231.47,196.63,183.21,297.97,febbraio,2,(^\d*) (\S*) (.*$),07:00,true,0,0,0
 426.87,196.73,183.21,297.97,marzo,3,(^\d*) (\S*) (.*$),07:00,true,0,0,0
 620.96,196.12,183.21,297.97,aprile,4,(^\d*) (\S*) (.*$),07:00,true,0,0,0
