@@ -28,29 +28,20 @@ $ mvn clean && mvn package
 
 ## Run the application
 
-To run the application type (please change the <YEAR> placeholder with the year, i.e. 2021):
+To run the application type (please change the <YEAR> placeholder with the year, i.e. 2021 and <ZONE> with the zone of interest, i.e. CHIERI3B):
 
 ```console
-$ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar /path/to/file.pdf <YEAR>
+$ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar <ZONE> /path/to/file.pdf /path/to/coordinates_file.csv <YEAR> /path/to/output/csv /path/to/output/ics
 ```
 
-The provided source code works with this [PDF](PDFs/CHIERI3B_2021.pdf)
+The provided source code works with this [PDF](PDFs/2021/CHIERI3B_2021.pdf)
 
 ```console
-$ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar PDFs/CHIERI3B.pdf 2020
-...
-PLASTICA,13/12/2020,09:00 PM,13/12/2020,09:10 PM,FALSE,PLASTICA
-ORG,14/12/2020,09:00 PM,14/12/2020,09:10 PM,FALSE,ORG
-CARTA,18/12/2020,09:00 PM,18/12/2020,09:10 PM,FALSE,CARTA
-VETRO,20/12/2020,09:00 PM,20/12/2020,09:10 PM,FALSE,VETRO
-ORG,21/12/2020,09:00 PM,21/12/2020,09:10 PM,FALSE,ORG
-NON REC,23/12/2020,09:00 PM,23/12/2020,09:10 PM,FALSE,NON REC
-PLASTICA,27/12/2020,09:00 PM,27/12/2020,09:10 PM,FALSE,PLASTICA
-ORG,28/12/2020,09:00 PM,28/12/2020,09:10 PM,FALSE,ORG
-...
+$ java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar CHIERI3B PDFs/2021/CHIERI3B_2021.pdf coordinates/2021/CHIERI3B_2021_coordinates.csv 2021 CSVs/2021 ICSs/2021
+
 ```
 
-The output lines can be collected in a .csv file and are already formatted in a way that can be imported in a Google Calendar.
+The application produces both .csv and .ics files within the path you specified on the command line.
 
 ## Final thought
 
