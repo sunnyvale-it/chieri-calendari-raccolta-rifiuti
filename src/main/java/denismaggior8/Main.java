@@ -67,6 +67,7 @@ public class Main {
                         int day = Integer.parseInt(m.group(1));
 
                         LocalDateTime ldt = LocalDateTime.from(LocalDate.of(year, coordinates.getId(), day).atStartOfDay())
+                                //.minusDays(1)
                                 .withHour(coordinates.getCollectionTime().getHour())
                                 .withMinute(coordinates.getCollectionTime().getMinute());
 
