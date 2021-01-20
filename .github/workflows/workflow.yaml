@@ -7,8 +7,8 @@ on:
       - master
       - development
     paths:
-      - 'coordinates/**/*.csv'
-      - 'PDFs/**/*.pdf'
+      - 'coordinates/**'
+      - 'PDFs/**'
       - 'pom.xml'
   workflow_dispatch:
 
