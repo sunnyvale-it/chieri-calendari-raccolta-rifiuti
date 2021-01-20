@@ -8,8 +8,6 @@ on:
     paths:
       - 'coordinates/**'
       - 'PDFs/**'
-  schedule:
-    - cron: '0 0 1 1 *'
   workflow_dispatch:
 
 jobs:
