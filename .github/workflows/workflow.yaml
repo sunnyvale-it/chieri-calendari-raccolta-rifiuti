@@ -10,6 +10,8 @@ on:
       - 'coordinates/**'
       - 'PDFs/**'
       - 'pom.xml'
+      - '*.sh'
+      - 'src/**'
   workflow_dispatch:
 
 jobs:
