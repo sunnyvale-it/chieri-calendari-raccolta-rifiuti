@@ -12,6 +12,8 @@ on:
       - 'pom.xml'
       - '*.sh'
       - 'src/**'
+      - 'README.md'
+      - '.github/workflows/*.yaml'
   workflow_dispatch:
 
 jobs:
