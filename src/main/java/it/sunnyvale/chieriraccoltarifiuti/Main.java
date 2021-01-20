@@ -1,9 +1,9 @@
-package denismaggior8;
+package it.sunnyvale.chieriraccoltarifiuti;
 
-import denismaggior8.model.Coordinates;
-import denismaggior8.utils.CSVUtils;
-import denismaggior8.utils.CoordinatesUtils;
-import denismaggior8.utils.ICSUtils;
+import it.sunnyvale.chieriraccoltarifiuti.model.Coordinates;
+import it.sunnyvale.chieriraccoltarifiuti.utils.CSVUtils;
+import it.sunnyvale.chieriraccoltarifiuti.utils.CoordinatesUtils;
+import it.sunnyvale.chieriraccoltarifiuti.utils.ICSUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
@@ -11,12 +11,8 @@ import org.apache.pdfbox.text.PDFTextStripperByArea;
 import java.awt.geom.Rectangle2D;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

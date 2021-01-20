@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>denismaggior8</groupId>
-    <artifactId>garbage-collection-PDF-text-extractor</artifactId>
+    <groupId>it.sunnyvale</groupId>
+    <artifactId>chieri-calendari-raccolta-rifiuti</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -26,7 +26,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>denismaggior8.Main</mainClass>
+                            <mainClass>it.sunnyvale.chieriraccoltarifiuti.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -47,7 +47,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>denismaggior8.Main</mainClass>
+                            <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

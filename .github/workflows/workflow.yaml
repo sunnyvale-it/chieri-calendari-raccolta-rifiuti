@@ -12,6 +12,8 @@ on:
       - 'pom.xml'
       - '*.sh'
       - 'src/**'
+      - 'README.md'
+      - '.github/workflows/*.yaml'
   workflow_dispatch:
 
 jobs:
@@ -33,13 +35,17 @@ jobs:
       - name: Run the application
         run: |
           ./run_me.sh
-      - name: Publish calendar files
+      - name: 🍳 Shake & bake README
+        run: |
+          ./render_readme.sh
+      - name: Publish calendars and files
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git checkout "${GITHUB_REF}"
           git add CSVs
           git add ICSs
+          git add README.md
           git commit -am "Update dynamic content"
       - name: Push changes
         uses: ad-m/github-push-action@master

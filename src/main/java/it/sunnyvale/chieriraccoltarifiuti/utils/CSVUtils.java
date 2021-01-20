@@ -1,6 +1,6 @@
-package denismaggior8.utils;
+package it.sunnyvale.chieriraccoltarifiuti.utils;
 
-import denismaggior8.model.Coordinates;
+import it.sunnyvale.chieriraccoltarifiuti.model.Coordinates;
 
 import java.io.IOException;
 import java.nio.file.Files;

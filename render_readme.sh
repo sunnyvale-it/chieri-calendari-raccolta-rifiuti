@@ -25,7 +25,7 @@ done
 )
 
 #echo "$ICS_CALENDARS"
-#perl -p -i -e "s/^Last update:.*$/Last update: $PAGE_UPDATE_TIMESTAMP/g" ./README.md
+perl -p -i -e "s/^Ultimo aggiornamento:.*$/Ultimo aggiornamento: $PAGE_UPDATE_TIMESTAMP/g" ./README.md
 perl -0777 -p -i -e "s/(?<=### Formato iCalendar)(.*)(?=### Formato MS Outlook)/\n$(echo "$ICS_CALENDARS"  | sed -e 's/\//\\\//g')\n/gs" ./README.md
 perl -0777 -p -i -e "s/(?<=### Formato MS Outlook)(.*)(?=## Istruzioni)/\n$(echo "$CSV_CALENDARS"  | sed -e 's/\//\\\//g')\n/gs" ./README.md
 
