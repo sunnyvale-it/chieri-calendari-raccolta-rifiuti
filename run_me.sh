@@ -229,7 +229,7 @@ do
   do
     if test -f "PDFs/${year}/${zone}_${year}.pdf" && test -f "coordinates/${year}/${zone}_${year}_coordinates.csv"; then
       echo "Processing file PDFs/${year}/${zone}_${year}.pdf using coordinates from coordinates/${year}/${zone}_${year}.csv"
-      java -jar target/garbage-collection-PDF-text-extractor-1.0-SNAPSHOT-jar-with-dependencies.jar ${zone} PDFs/${year}/${zone}_${year}.pdf coordinates/${year}/${zone}_${year}_coordinates.csv ${year} CSVs/${year} ICSs/${year}
+      java -jar target/chieri-calendari-raccolta-rifiuti-1.0-SNAPSHOT-jar-with-dependencies.jar ${zone} PDFs/${year}/${zone}_${year}.pdf coordinates/${year}/${zone}_${year}_coordinates.csv ${year} CSVs/${year} ICSs/${year}
     fi
   done
 done

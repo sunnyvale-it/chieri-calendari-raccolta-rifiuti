@@ -1,6 +1,6 @@
-package denismaggior8.utils;
+package it.sunnyvale.chieriraccoltarifiuti.utils;
 
-import denismaggior8.model.Coordinates;
+import it.sunnyvale.chieriraccoltarifiuti.model.Coordinates;
 import net.fortuna.ical4j.data.CalendarOutputter;
 import net.fortuna.ical4j.model.DateTime;
 import net.fortuna.ical4j.model.TimeZone;
@@ -10,7 +10,6 @@ import net.fortuna.ical4j.model.component.VEvent;
 import net.fortuna.ical4j.model.property.CalScale;
 import net.fortuna.ical4j.model.property.ProdId;
 import net.fortuna.ical4j.model.property.Version;
-import net.fortuna.ical4j.util.FixedUidGenerator;
 import net.fortuna.ical4j.util.RandomUidGenerator;
 import net.fortuna.ical4j.util.UidGenerator;
 

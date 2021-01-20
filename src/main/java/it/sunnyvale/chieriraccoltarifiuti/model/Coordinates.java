@@ -1,4 +1,4 @@
-package denismaggior8.model;
+package it.sunnyvale.chieriraccoltarifiuti.model;
 
 
 import lombok.AllArgsConstructor;
