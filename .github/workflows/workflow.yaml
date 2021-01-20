@@ -24,4 +24,15 @@ jobs:
           java-version: 1.8
       - name: Build the application
         run: |
-          mvn package
+          ./build_me.sh
+      - name: Run the application
+        run: |
+          ./run_me.sh
+      - name: Publish calendar files
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add CSVs
+          git add ICSs
+          git commit -am "Update dynamic content"
+          git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
