@@ -35,8 +35,8 @@ public class ICSUtils {
         calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
         calendar.getProperties().add(Version.VERSION_2_0);
         calendar.getProperties().add(CalScale.GREGORIAN);
-        calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta Rifiuti "+zone+" "+year));
-        calendar.getProperties().add(new XProperty("X-WR-CALDESC", "Raccolta Rifiuti "+zone+" "+year));
+        calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta rifiuti "+zone+" "+year));
+        calendar.getProperties().add(new XProperty("X-WR-CALDESC", "Raccolta rifiuti "+zone+" "+year));
     }
 
     public void addEvent(String collection, LocalDateTime ldt, Coordinates coordinates){
