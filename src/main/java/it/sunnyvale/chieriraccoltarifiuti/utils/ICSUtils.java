@@ -10,6 +10,7 @@ import net.fortuna.ical4j.model.component.VEvent;
 import net.fortuna.ical4j.model.property.CalScale;
 import net.fortuna.ical4j.model.property.ProdId;
 import net.fortuna.ical4j.model.property.Version;
+import net.fortuna.ical4j.model.property.XProperty;
 import net.fortuna.ical4j.util.RandomUidGenerator;
 import net.fortuna.ical4j.util.UidGenerator;
 
@@ -22,15 +23,20 @@ import java.util.Date;
 
 public class ICSUtils {
 
-    net.fortuna.ical4j.model.Calendar calendar = new net.fortuna.ical4j.model.Calendar();
-    TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
-    TimeZone timezone = registry.getTimeZone("Europe/Rome");
+    private net.fortuna.ical4j.model.Calendar calendar = new net.fortuna.ical4j.model.Calendar();
+    private TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
+    private TimeZone timezone = registry.getTimeZone("Europe/Rome");
+    private String zone;
+    private int year;
 
-    public ICSUtils(){
+    public ICSUtils(String zone, int year){
+        this.zone = zone;
+        this.year = year;
         calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
         calendar.getProperties().add(Version.VERSION_2_0);
         calendar.getProperties().add(CalScale.GREGORIAN);
-
+        calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta rifiuti "+zone+" "+year));
+        calendar.getProperties().add(new XProperty("X-WR-CALDESC", "Raccolta rifiuti "+zone+" "+year));
     }
 
     public void addEvent(String collection, LocalDateTime ldt, Coordinates coordinates){

@@ -30,7 +30,7 @@ public class Main {
         Coordinates[] coordinatesArray = CoordinatesUtils.readCoordinatesFromCSV(inputCoordinatesFilePath);
 
         CSVUtils csvUtils = new CSVUtils("Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Location");
-        ICSUtils icsUtils = new ICSUtils();
+        ICSUtils icsUtils = new ICSUtils(zone,year);
 
         try {
 
