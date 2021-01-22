@@ -2,15 +2,12 @@ package it.sunnyvale.chieriraccoltarifiuti.utils;
 
 import it.sunnyvale.chieriraccoltarifiuti.model.Coordinates;
 import net.fortuna.ical4j.data.CalendarOutputter;
-import net.fortuna.ical4j.model.DateTime;
-import net.fortuna.ical4j.model.TimeZone;
-import net.fortuna.ical4j.model.TimeZoneRegistry;
-import net.fortuna.ical4j.model.TimeZoneRegistryFactory;
+import net.fortuna.ical4j.model.*;
+import net.fortuna.ical4j.model.component.VAlarm;
 import net.fortuna.ical4j.model.component.VEvent;
-import net.fortuna.ical4j.model.property.CalScale;
-import net.fortuna.ical4j.model.property.ProdId;
-import net.fortuna.ical4j.model.property.Version;
-import net.fortuna.ical4j.model.property.XProperty;
+import net.fortuna.ical4j.model.parameter.XParameter;
+import net.fortuna.ical4j.model.property.*;
+import net.fortuna.ical4j.util.FixedUidGenerator;
 import net.fortuna.ical4j.util.RandomUidGenerator;
 import net.fortuna.ical4j.util.UidGenerator;
 
@@ -19,6 +16,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.Date;
 
 public class ICSUtils {
@@ -52,6 +50,23 @@ public class ICSUtils {
         // Generate a UID for the event..
         UidGenerator ug = new RandomUidGenerator();
         event.getProperties().add(ug.generateUid());
+
+        // Add the event alarm
+        VAlarm alarm = new VAlarm();
+
+        Trigger trigger = new Trigger();
+        trigger.setDateTime(new DateTime(Date.from(ldt.minusHours(12).atZone(ZoneId.of("Europe/Rome")).toInstant())));
+        alarm.getProperties().add(trigger);
+        //Duration duration = new Duration();
+        //duration.setDuration(java.time.Duration.ofHours(12));
+        //trigger.setDuration(duration.getDuration());
+
+        alarm.getProperties().add(Action.DISPLAY);
+
+        Description description = new Description("Raccolta differenziata - prossimo conferimento: "+collection);
+        alarm.getProperties().add(description);
+
+        event.getAlarms().add(alarm);
 
         calendar.getComponents().add(event);
     }
