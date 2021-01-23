@@ -41,4 +41,4 @@ Il software ed i calendari costituiscono un Bene Comune digitale, sono sviluppat
 
 ---
 Questa pagina è stata creata dinamicamente da GitHub Action ![build](https://img.shields.io/github/workflow/status/sunnyvale-it/chieri-calendari-raccolta-rifiuti/update)  
-Ultimo aggiornamento: ⚡Sat Jan 23 11:44:13 UTC 2021⚡
+Ultimo aggiornamento: ⚡Sat Jan 23 14:47:19 UTC 2021⚡
