@@ -1,5 +1,6 @@
 package it.sunnyvale.chieriraccoltarifiuti.utils;
 
+import it.sunnyvale.chieriraccoltarifiuti.ics.EventUidGenerator;
 import it.sunnyvale.chieriraccoltarifiuti.model.Coordinates;
 import net.fortuna.ical4j.data.CalendarOutputter;
 import net.fortuna.ical4j.model.*;
@@ -30,7 +31,7 @@ public class ICSUtils {
     public ICSUtils(String zone, int year){
         this.zone = zone;
         this.year = year;
-        calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
+        calendar.getProperties().add(new ProdId("-//Sunnyvale S.r.l.//iCal4j 1.0//EN"));
         calendar.getProperties().add(Version.VERSION_2_0);
         calendar.getProperties().add(CalScale.GREGORIAN);
         calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta rifiuti "+zone+" "+year));
@@ -48,22 +49,28 @@ public class ICSUtils {
         VEvent event = new VEvent(dtStart,dtEnd, collection);
 
         // Generate a UID for the event..
-        UidGenerator ug = new RandomUidGenerator();
+        EventUidGenerator ug = new EventUidGenerator(collection,ldt,coordinates);
         event.getProperties().add(ug.generateUid());
 
         // Add the event alarm
         VAlarm alarm = new VAlarm();
 
         Trigger trigger = new Trigger();
-        trigger.setDateTime(new DateTime(Date.from(ldt.minusHours(12).atZone(ZoneId.of("Europe/Rome")).toInstant())));
+        // trigger fires at a specific time
+        //trigger.setDateTime(new DateTime(Date.from(ldt.minusHours(12).atZone(ZoneId.of("Europe/Rome")).toInstant())));
+        // trigger fires 12H before the start of an event
+        trigger.setValue("-PT12H");
         alarm.getProperties().add(trigger);
-        //Duration duration = new Duration();
-        //duration.setDuration(java.time.Duration.ofHours(12));
-        //trigger.setDuration(duration.getDuration());
 
         alarm.getProperties().add(Action.DISPLAY);
 
-        Description description = new Description("Raccolta differenziata - prossimo conferimento: "+collection);
+        // alarm repetition
+        Repeat repeat = new Repeat();
+        repeat.setValue("1");
+        alarm.getProperties().add(repeat);
+
+        // alarm descriptions
+        Description description = new Description("Raccolta differenziata, prossimo conferimento: "+collection);
         alarm.getProperties().add(description);
 
         event.getAlarms().add(alarm);
