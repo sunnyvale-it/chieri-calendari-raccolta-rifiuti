@@ -36,6 +36,7 @@ public class ICSUtils {
         calendar.getProperties().add(CalScale.GREGORIAN);
         calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta rifiuti "+zone+" "+year));
         calendar.getProperties().add(new XProperty("X-WR-CALDESC", "Raccolta rifiuti "+zone+" "+year));
+        calendar.getProperties().add(new XProperty("X-PUBLISHED-TTL", "PT12H"));
 
         RefreshInterval refreshInterval = new RefreshInterval();
         refreshInterval.setValue("PT12H");
