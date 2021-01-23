@@ -36,6 +36,10 @@ public class ICSUtils {
         calendar.getProperties().add(CalScale.GREGORIAN);
         calendar.getProperties().add(new XProperty("X-WR-CALNAME", "Raccolta rifiuti "+zone+" "+year));
         calendar.getProperties().add(new XProperty("X-WR-CALDESC", "Raccolta rifiuti "+zone+" "+year));
+
+        RefreshInterval refreshInterval = new RefreshInterval();
+        refreshInterval.setValue("PT12H");
+        calendar.getProperties().add(refreshInterval);
     }
 
     public void addEvent(String collection, LocalDateTime ldt, Coordinates coordinates){
@@ -74,10 +78,6 @@ public class ICSUtils {
         alarm.getProperties().add(description);
 
         event.getAlarms().add(alarm);
-
-        RefreshInterval refreshInterval = new RefreshInterval();
-        refreshInterval.setValue("PT12H");
-        calendar.getProperties().add(refreshInterval);
 
         calendar.getComponents().add(event);
     }
