@@ -49,7 +49,7 @@ public class ICSUtils {
         VEvent event = new VEvent(dtStart,dtEnd, collection);
 
         // Generate a UID for the event..
-        EventUidGenerator ug = new EventUidGenerator(collection,ldt,coordinates);
+        EventUidGenerator ug = new EventUidGenerator(collection,ldt,coordinates,year,zone);
         event.getProperties().add(ug.generateUid());
 
         // Add the event alarm
