@@ -75,6 +75,10 @@ public class ICSUtils {
 
         event.getAlarms().add(alarm);
 
+        RefreshInterval refreshInterval = new RefreshInterval();
+        refreshInterval.setValue("PT12H");
+        calendar.getProperties().add(refreshInterval);
+
         calendar.getComponents().add(event);
     }
 
