@@ -4,7 +4,7 @@
 
 ### Iscrizione al calendario
 
-Iscriversi ad un calendario significa visualizzare un calendario esterno, tra quelli impostati sul vostro account Google.
+Iscriversi ad un calendario significa visualizzare un calendario esterno tra quelli impostati sul vostro account Google.
 
 Tramite un browser internet (Explorer, Firefox, Chrome, Edge, Opera) visualizzare il sito [https://calendar.google.com](https://calendar.google.com).
 
