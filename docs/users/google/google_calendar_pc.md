@@ -32,7 +32,7 @@ Dal menù di sinistra selezionare **Da URL** e nella parte centrale inserire l'i
 
 Gli indirizzi dei calendari delle varie zone (in formato ICS)  sono quelli che compaiono [in prima pagina](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti) ed in generale hanno tutti questo formato:
 
-https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/**_ANNO_**/**_ZONA_**_**_ANNO_**.ics
+https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/ANNO/ZONA_ANNO.ics
 
 Nell'indirizzo qui sopra occorre naturalmente sostituire i segnaposto **_ANNO_** con l'anno d'interesse e **_ZONA_** con la zona di residenza.
 
