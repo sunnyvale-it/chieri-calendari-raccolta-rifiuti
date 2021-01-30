@@ -30,7 +30,7 @@ Dal menù di sinistra selezionare **Da URL** e nella parte centrale inserire l'i
   <img src="img/2.png">
 </kbd>
 
-Gli indirizzi dei calendari (in formato ICS) delle varie zone sono quelli che compaiono ed in generale hanno tutti questo formato:
+Gli indirizzi dei calendari delle varie zone (in formato ICS)  sono quelli che compaiono [in prima pagina](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti) ed in generale hanno tutti questo formato:
 
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/**_ANNO_**/**_ZONA_**_**_ANNO_**.ics
 
