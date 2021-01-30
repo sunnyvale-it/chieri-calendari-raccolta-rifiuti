@@ -14,7 +14,9 @@ Subito dopo il login, la schermata mostra il calendario associato al vostro acco
 
 Per iscriversi al calendario di raccolta rifiuti della vostra zona, cliccate sul tasto **+** in basso a sinistra, a fianco di **Altri calendari** (area dello schermo evidenziata in rosso).
 
-![](img/0.png)
+<kbd>
+  <img src="img/0.png">
+</kbd>
 
 Dal menù a tendina, selezionare **Iscriviti al calendario** (area dello schermo evidenziata in rosso).
 
