@@ -26,11 +26,15 @@ Dal menù a tendina, selezionare **Iscriviti al calendario** (area dello schermo
   <img src="img/1.png">
 </kbd>
 
+<br/><br/>
+
 Dal menù di sinistra selezionare **Da URL** e nella parte centrale inserire l'indirizzo del calendario a cui intendete iscrivervi (aree dello schermo evidenziate in rosso).
 
 <kbd>
   <img src="img/2.png">
 </kbd>
+
+<br/><br/>
 
 Gli indirizzi dei calendari delle varie zone (in formato ICS)  sono quelli che compaiono [in prima pagina](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti) ed in generale hanno tutti questo formato:
 
@@ -50,11 +54,15 @@ Inserito l'indirizzo premere **Aggiungi calendario** (area dello schermo evidenz
   <img src="img/3.png">
 </kbd>
 
+<br/><br/>
+
 Il calendario comparirà quindi tra gli altri calendari del vostro account Google e gli eventi verranno visualizzati nella parte centrale dello schermo (aree dello schermo evidenziate in rosso)
 
 <kbd>
   <img src="img/4.png">
 </kbd>
+
+<br/><br/>
 
 ### Impostazione delle notifiche
 
@@ -66,17 +74,23 @@ Cliccando sui tre puntini che compaiono a fianco del calendario, selezionare la 
   <img src="img/5.png">
 </kbd>
 
+<br/><br/>
+
 Nelle impostazioni del calendario, è possibile aggiungere delle **Notifiche di eventi**. L'esempio qui sotto illustra la volontà di ricevere una notifica 12 ore prima dell'evento di raccolta (tipicamente eseguito alle ore 7:00 del giorno di conferimento).
 
 <kbd>
   <img src="img/6.png">
 </kbd>
 
+<br/><br/>
+
 Più in basso nella stessa pagina è possibile impostare altri tipi di notifiche (area dello schermo evidenziata in rosso).
 
 <kbd>
   <img src="img/7.png">
 </kbd>
+
+<br/><br/>
 
 ### Cancellazione dell'iscrizione
 
@@ -85,3 +99,5 @@ E' possibile cancellare l'iscrizione ad un calendario di raccolta rifiuti, clicc
 <kbd>
   <img src="img/8.png">
 </kbd>
+
+<br/><br/>
