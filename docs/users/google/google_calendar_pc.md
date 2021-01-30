@@ -26,6 +26,10 @@ Dal menù a tendina, selezionare **Iscriviti al calendario** (area dello schermo
 
 Dal menù di sinistra selezionare **Da URL** e nella parte centrale inserire l'indirizzo del calendario a cui intendete iscrivervi (aree dello schermo evidenziate in rosso).
 
+<kbd>
+  <img src="img/2.png">
+</kbd>
+
 Gli indirizzi dei calendari (in formato ICS) delle varie zone sono quelli che compaiono ed in generale hanno tutti questo formato:
 
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/**_ANNO_**/**_ZONA_**_**_ANNO_**.ics
@@ -37,10 +41,6 @@ Un esempio di indirizzo del calendario della raccolta rifiuti per la zona **CHIE
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI6B_2021.ics
 
 **NB:** Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
-
-<kbd>
-  <img src="img/2.png">
-</kbd>
 
 Inserito l'indirizzo premere **Aggiungi calendario** (area dello schermo evidenziata in rosso)
 
