@@ -18,6 +18,8 @@ Per iscriversi al calendario di raccolta rifiuti della vostra zona, cliccate sul
   <img src="img/0.png">
 </kbd>
 
+<br/><br/>
+
 Dal menù a tendina, selezionare **Iscriviti al calendario** (area dello schermo evidenziata in rosso).
 
 <kbd>
