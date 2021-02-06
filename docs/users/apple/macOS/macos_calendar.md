@@ -61,7 +61,7 @@ Il Calendario ora compare tra quelli personali e gli eventi di raccolta rifiuti 
 
 ### Impostazioni dell'iscrizione
 
-Per variare le impostazioni dell'iscrizione, dopo aver fatto click con il tasto destro del mouse sul calendario appena importato cliccare su **Impostazioni dell'iscrizione**
+Per variare le impostazioni dell'iscrizione, dopo aver fatto click con il tasto destro del mouse sul calendario appena importato cliccare su **Ottieni informazioni**
 
 <kbd>
   <img src="img/4.jpg">
