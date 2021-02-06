@@ -40,7 +40,7 @@ Gli eventi di raccolta verranno notificati alle ore 19:00 del giorno antecedente
 
 ### Cancellazione dell'iscrizione
 
-E' possibile cancellare l'iscrizione ad un calendario di raccolta rifiuti, dopo aver aperto l'applicazione Calendar sul proprio dispositivo, cliccare su **Calendari** (area dello schermo evidenziata in rosso).
+E' possibile cancellare l'iscrizione ad un calendario di raccolta rifiuti. Dopo aver aperto l'applicazione Calendar sul proprio dispositivo, cliccare su **Calendari** (area dello schermo evidenziata in rosso).
 
 <kbd>
   <img src="img/4.jpeg">
