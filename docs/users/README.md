@@ -3,3 +3,5 @@
 Usa i link qui sotto per consultare la documentazione a seconda del dispositivo o piattaforma utilizzata (elenco in aggiornamento):
 
 - [Google Calendar (da computer o tablet)](google/google_calendar_pc.md)
+
+- [macOS Calendar (da Mac)](apple/macOS/macos_calendar.md)
