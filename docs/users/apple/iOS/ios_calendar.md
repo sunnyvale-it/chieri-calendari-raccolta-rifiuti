@@ -58,7 +58,7 @@ Selezionare la **i** accanto al calendario da rimuovere (area dello schermo evid
 <br/><br/>
 
 
-Cliccare quindi su **Cancella calendario**
+Cliccare quindi su **Cancella calendario** (area dello schermo evidenziata in rosso).
 
 <kbd>
   <img src="img/6.jpeg">
