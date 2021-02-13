@@ -16,10 +16,10 @@ Nella pagina principale identificare la zona d'interesse e cliccare sul relativo
 
 <br/><br/>
 
-Un elenco di eventi viene visualizzato sullo schermo, confermare l'iscrizione ed uscire (area dello schermo evidenziata in rosso).
+Una finestra in sovraimpressione ci chiede se vogliamo sottoscriverci al calendario, cliccare su **OK** (area dello schermo evidenziata in rosso). 
 
 <kbd>
-  <img src="img/1.jpeg">
+  <img src="img/1.png">
 </kbd>
 
 <br/><br/>
