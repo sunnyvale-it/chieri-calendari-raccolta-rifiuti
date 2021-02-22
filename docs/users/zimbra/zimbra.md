@@ -24,7 +24,7 @@ In seguito, selezionare **Aggiungi agenda esterna (altro)**
 
 <br/><br/>
 
-In fase di selezione del tito di calendario, selezionare **Iscrizione a iCAL** 
+In fase di selezione del tipo di calendario, selezionare **Iscrizione a iCAL** 
 
 <kbd>
   <img src="img/3.jpg">
