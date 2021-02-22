@@ -52,6 +52,7 @@ https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti
 
 **NB:** Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
 
+<br/><br/>
 
 E' possibile inserire un nome alternativo per il calendario a cui ci sta iscrivendo, così come un colore che contrassegnerà gli eventi in agenda.
 
