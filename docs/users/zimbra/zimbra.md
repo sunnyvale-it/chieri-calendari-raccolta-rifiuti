@@ -32,7 +32,13 @@ In fase di selezione del tipo di calendario, selezionare **Iscrizione a iCAL**
 
 <br/><br/>
 
-Verrà richiesto l'inserimento dell'indirizzo (URL) del calendario a cui ci si intende sottoscrivere. 
+Viene richiesto l'indirizzo (URL) del calendario a cui ci si intende sottoscrivere. 
+
+<kbd>
+  <img src="img/4.jpg">
+</kbd>
+
+<br/><br/>
 
 Gli indirizzi dei calendari delle varie zone (in formato ICS)  sono quelli che compaiono [in prima pagina](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti) ed in generale hanno tutti questo formato:
 
@@ -45,12 +51,6 @@ Un esempio di indirizzo del calendario della raccolta rifiuti per la zona **CHIE
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI6B_2021.ics
 
 **NB:** Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
-
-<kbd>
-  <img src="img/4.jpg">
-</kbd>
-
-<br/><br/>
 
 
 E' possibile inserire un nome alternativo per il calendario a cui ci sta iscrivendo, così come un colore che contrassegnerà gli eventi in agenda.
