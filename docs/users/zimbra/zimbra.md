@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti
 
 <br/><br/>
 
-E' possibile inserire un nome alternativo per il calendario a cui ci sta iscrivendo, così come un colore che contrassegnerà gli eventi in agenda.
+E' possibile assegnare al calendario un nome alternativo, così come un colore che contrassegnerà gli eventi in agenda.
 
 Suggeriamo anche di contrassegnare **Escludi questa Agenda quando si segnalano gli orari di liberi/occupati**.
 
