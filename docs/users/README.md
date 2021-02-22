@@ -8,4 +8,4 @@ Usa i link qui sotto per consultare la documentazione a seconda del dispositivo 
 
 - [iOS Calendar (da iPhone o iPad)](apple/iOS/ios_calendar.md)
 
-- [Zimbra (da PC o tablet)](apple/zimbra/zimbra.md)
+- [Zimbra (da PC o tablet)](zimbra/zimbra.md)
