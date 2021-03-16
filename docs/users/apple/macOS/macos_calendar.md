@@ -14,19 +14,25 @@ Avvia l'app **Calendario** sul Mac, poi clicca su **File** > **Nuova iscrizione 
 
 <br/><br/>
 
-Nella finestra che compare al centro dello schermo, inserire l'indirizzo del calendario al quale ci si intende iscrivere. 
+Nella finestra che compare al centro dello schermo, inserire l'indirizzo URL del calendario al quale ci si intende iscrivere. 
 
-Gli indirizzi dei calendari delle varie zone (in formato ICS)  sono quelli che compaiono [in prima pagina](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti) ed in generale hanno tutti questo formato:
+L'indirizzo URL si può recuperare in due modi: 
+
+1. [**Dalla pagina principale**](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti): scorrendo troverete i calendari disponibili, cliccando sulla vostra zona di residenza si aprirà una nuova pagina, copiate l'URL (indirizzo nella barra di ricerca) e incollatelo nella casella "URL" del calendario.
+
+2. **Manualmente**: gli indirizzi dei calendari delle varie zone (in formato ICS) hanno in generale tutti questo formato:
 
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/ANNO/ZONA_ANNO.ics
 
-Nell'indirizzo qui sopra occorre naturalmente sostituire i segnaposto **_ANNO_** con l'anno d'interesse e **_ZONA_** con la zona di residenza.
+Nell'indirizzo qui sopra occorre naturalmente sostituire i segnaposto **ANNO** con l'anno d'interesse e **ZONA** con la zona di residenza.
 
-Un esempio di indirizzo del calendario della raccolta rifiuti per la zona **CHIERI3B** nell'anno **2021** risulta essere:
+Un esempio di indirizzo URL del calendario di raccolta rifiuti per la zona **CHIERI3B** nell'anno 2021 risulta essere:
 
 https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI6B_2021.ics
 
-**NB:** Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
+NB: Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
+
+<br/><br/>
 
 Dopo aver inserito l'indirizzo del calendario, clicca su **Iscriviti**
 
