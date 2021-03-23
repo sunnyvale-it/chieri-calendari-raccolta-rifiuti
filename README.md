@@ -2,7 +2,7 @@
 
 Fonte: [Consorzio Chierese per i Servizi](http://www.ccs.to.it/calendari-raccolta)
 ## Calendari disponibili
-### Formato iCalendar
+### Formato iCalendar compatibile con Google Calendar, MacOS Calendar, iOS Calendar, Zimbra
 #### Anno 2021
 - [CHIERI1A_2021.ics](https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI1A_2021.ics)
 - [CHIERI1B_2021.ics](https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI1B_2021.ics)
@@ -43,4 +43,4 @@ Il software ed i calendari costituiscono un Bene Comune digitale, sono sviluppat
 
 ---
 Questa pagina è stata creata dinamicamente da GitHub Action ![build](https://img.shields.io/github/workflow/status/sunnyvale-it/chieri-calendari-raccolta-rifiuti/update)  
-Ultimo aggiornamento: ⚡Sat Jan 30 14:45:23 UTC 2021⚡
+Ultimo aggiornamento: ⚡Tue 23 Mar 2021 19:08:12 CET⚡
