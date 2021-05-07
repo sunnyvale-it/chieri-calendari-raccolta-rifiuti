@@ -117,7 +117,7 @@ Il software ed i calendari costituiscono un Bene Comune digitale, sono sviluppat
 ## Contribuisci
 Se sei un tecnico programmatore e vuoi contribuire a questo software correggendo un'anomalia o implementando nuove funzionalità, ti diamo una buona notizia: puoi farlo utilizzando esclusivamente il tuo browser, cliccando sul pulsante **Gitpod** qui sotto.
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)]([![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti))
 
 Saremo felici di ricevere le tue pull requests!
 
