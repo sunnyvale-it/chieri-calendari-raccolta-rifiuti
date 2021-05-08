@@ -115,11 +115,13 @@ A seconda del dispositivo che stai utilizzando, trovi la documentazione su come 
 Il software ed i calendari costituiscono un Bene Comune digitale, sono sviluppati e manutenuti da [Sunnyvale S.r.l.](https://www.sunnyvale.it) secondo un [Patto di condivisione](https://www.comune.chieri.to.it/chieri-aperta/patti-smart) stipulato tra l'azienda ed il comune di Chieri.
 
 ## Contribuisci
-Se sei un tecnico programmatore e vuoi contribuire a questo software correggendo un'anomalia o implementando nuove funzionalità, ti diamo una buona notizia: puoi farlo utilizzando esclusivamente il tuo browser, cliccando sul pulsante **Gitpod** qui sotto.
+Se sei un tecnico programmatore e vuoi contribuire a questo software correggendo un'anomalia o implementando nuove funzionalità, ti diamo il benvenuto!
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/-/tree/development)
+Puoi fare un fork di questo repository, aprirlo sul tuo account GitHub e cliccare sul pulsante **Gitpod** qui sotto.
 
-Saremo felici di ricevere le tue pull requests!
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+
+Si aprirà un ambiente di sviluppo che potrai usare direttamente dal tuo browser, modificare il codice ed aprirci una pull request!
 
 ## Licenza
 [Creative Commons - Attribuzione 4.0 Internazionale (CC BY 4.0s)](https://creativecommons.org/licenses/by/4.0/)
