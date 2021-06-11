@@ -117,7 +117,7 @@ Il software ed i calendari costituiscono un Bene Comune digitale, sono sviluppat
 ## Contribuisci
 Se sei un tecnico programmatore e vuoi contribuire a questo software correggendo un'anomalia o implementando nuove funzionalità, ti diamo il benvenuto!
 
-Puoi fare un fork di questo repository, aprirlo sul tuo account GitHub e cliccare sul pulsante **Gitpod** qui sotto.
+Puoi fare un fork di questo repository per poi aprirlo sul tuo account GitHub e cliccare sul pulsante **Gitpod** qui sotto (consigliamo l'uso del browser Google Chrome).
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
