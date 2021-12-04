@@ -128,4 +128,4 @@ Si aprirà un ambiente di sviluppo che potrai usare direttamente dal tuo browser
 
 ---
 Questa pagina è stata creata dinamicamente da GitHub Action ![build](https://img.shields.io/github/workflow/status/sunnyvale-it/chieri-calendari-raccolta-rifiuti/update)  
-Ultimo aggiornamento: ⚡Fri Jun 11 23:26:37 UTC 2021⚡
+Ultimo aggiornamento: ⚡Fri Dec  3 23:52:47 UTC 2021⚡
