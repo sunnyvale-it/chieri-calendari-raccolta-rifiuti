@@ -1,6 +1,6 @@
 #!/bin/bash  
 
-#gh auth login --with-token <<<"$GITHUB_TOKEN"
+gh auth login --with-token <<<"$GITHUB_TOKEN"
 ICS_CALENDARS=""
 
 for year in $(find ICSs/* -type d | cut -d '/' -f 2);
