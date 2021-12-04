@@ -44,6 +44,8 @@ jobs:
       - name: Release files
         run: |
           ./release_files.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 🍳 Shake & bake README
         run: |
           ./render_readme.sh
