@@ -8,7 +8,7 @@ do
   echo -e "#### Anno $year"
   for file in $(cd ICSs/${year} && find *.ics -type f);
   do
-    echo "- [$file](https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/${year}/$file)"
+    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-ICS/$file)"
   done
 done
 )
@@ -19,7 +19,7 @@ do
   echo -e "#### Anno $year"
   for file in $(cd CSVs/${year} && find *.csv -type f);
   do
-    echo "- [$file](https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/CSVs/${year}/$file)"
+    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-CSV/$file)"
   done
 done
 )
