@@ -46,13 +46,13 @@ L'indirizzo URL si può recuperare in due modi:
 
 2. **Manualmente**: gli indirizzi dei calendari delle varie zone (in formato ICS) hanno in generale tutti questo formato:
 
-https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/ANNO/ZONA_ANNO.ics
+https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/ANNO-ICS/ZONA_ANNO.ics
 
 Nell'indirizzo qui sopra occorre naturalmente sostituire i segnaposto **ANNO** con l'anno d'interesse e **ZONA** con la zona di residenza.
 
-Un esempio di indirizzo URL del calendario di raccolta rifiuti per la zona **CHIERI3B** nell'anno 2021 risulta essere:
+Un esempio di indirizzo URL del calendario di raccolta rifiuti per la zona **CHIERI6B** nell'anno 2021 risulta essere:
 
-https://raw.githubusercontent.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/master/ICSs/2021/CHIERI6B_2021.ics
+https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2021-ICS/CHIERI6B_2021.ics
 
 NB: Gli indirizzi a cui si fa riferimento sono quelli dei calendari in formato iCalendar (estensione .ics). La procedura NON funziona con gli indirizzi dei calendari in formato CSV.
 
