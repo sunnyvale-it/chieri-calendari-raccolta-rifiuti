@@ -123,6 +123,8 @@ Puoi fare un fork di questo repository per poi aprirlo sul tuo account GitHub e 
 
 Si aprirà un ambiente di sviluppo che potrai usare direttamente dal tuo browser, modificare il codice ed aprirci una pull request!
 
+Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/README.md)
+
 ## Licenza
 [Creative Commons - Attribuzione 4.0 Internazionale (CC BY 4.0s)](https://creativecommons.org/licenses/by/4.0/)
 
