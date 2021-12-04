@@ -1,25 +1,27 @@
-#!/bin/bash
+#!/bin/bash  
 
-gh auth login --with-token <<<"$GITHUB_TOKEN"
+#gh auth login --with-token <<<"$GITHUB_TOKEN"
+ICS_CALENDARS=""
 
-export ICS_CALENDARS=$(
-for year in $(cd ICSs/ && find * -type d);
+for year in $(find ICSs/* -type d | cut -d '/' -f 2);
 do
-  for file in $(cd ICSs/${year} && find *.ics -type f);
+  for file in $(find ICSs/${year}/*.ics -type f);
   do
-    TAGNAME="$(echo $file)"
-    gh release create "$TAGNAME" $file --title "$TAGNAME" --notes ""
+    ZONA=$(echo $file | sed 's/\..*//g' | cut -d "/" -f 3 | cut -d "_" -f 1)
+    FORMATO=$(echo $file  | cut -d "." -f 2)
+    ICS_CALENDARS+="'./${file}#$ZONA' "
   done
+  eval "gh release create \"$year-ICS\" -t \"$year-ICS\" -n \"Calendari $year in formato ICS\" $ICS_CALENDARS"
 done
-)
 
-export CSV_CALENDARS=$(
-for year in $(cd CSVs/ && find * -type d);
+CSV_CALENDARS=""
+for year in $(find CSVs/* -type d | cut -d '/' -f 2);
 do
-  for file in $(cd CSVs/${year} && find *.csv -type f);
+  for file in $(find CSVs/${year}/*.csv -type f);
   do
-    TAGNAME="$(echo $file)"
-    gh release create "$TAGNAME" $file --title "$TAGNAME" --notes ""
+    ZONA=$(echo $file | sed 's/\..*//g' | cut -d "/" -f 3 | cut -d "_" -f 1)
+    FORMATO=$(echo $file  | cut -d "." -f 2)
+    CSV_CALENDARS+="'./${file}#$ZONA' "
   done
+  eval "gh release create \"$year-CSV\" -t \"$year-CSV\" -n \"Calendari $year in formato CSV\" $CSV_CALENDARS"
 done
-)
