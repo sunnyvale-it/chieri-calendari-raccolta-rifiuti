@@ -11,9 +11,11 @@ do
     FORMATO=$(echo $file  | cut -d "." -f 2)
     ICS_CALENDARS+="'./${file}#$ZONA' "
   done
-  if [ -z $(gh release view $year-ICS 2> /dev/null | cat) ]
+  if [ -z "$(gh release view $year-ICS 2> /dev/null | cat)" ]
   then  
     eval "gh release create \"$year-ICS\" -t \"$year-ICS\" -n \"Calendari $year in formato ICS\" $ICS_CALENDARS"
+  else
+    echo "Release $year-ICS already present, skipping..."
   fi
 done
 
@@ -28,8 +30,10 @@ do
     FORMATO=$(echo $file  | cut -d "." -f 2)
     CSV_CALENDARS+="'./${file}#$ZONA' "
   done
-  if [ -z $(gh release view $year-CSV 2> /dev/null | cat) ]
+  if [ -z "$(gh release view $year-CSV 2> /dev/null | cat)" ]
   then  
     eval "gh release create \"$year-CSV\" -t \"$year-CSV\" -n \"Calendari $year in formato CSV\" $CSV_CALENDARS"
+  else
+    echo "Release $year-CSV already present, skipping..."
   fi
 done
