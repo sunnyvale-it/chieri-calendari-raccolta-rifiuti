@@ -11,8 +11,13 @@ do
     FORMATO=$(echo $file  | cut -d "." -f 2)
     ICS_CALENDARS+="'./${file}#$ZONA' "
   done
-  eval "gh release create \"$year-ICS\" -t \"$year-ICS\" -n \"Calendari $year in formato ICS\" $ICS_CALENDARS"
+  if [ -z $(gh release view $year-ICS 2> /dev/null | cat) ]
+  then  
+    eval "gh release create \"$year-ICS\" -t \"$year-ICS\" -n \"Calendari $year in formato ICS\" $ICS_CALENDARS"
+  fi
 done
+
+sleep 20
 
 CSV_CALENDARS=""
 for year in $(find CSVs/* -type d | cut -d '/' -f 2);
@@ -23,5 +28,8 @@ do
     FORMATO=$(echo $file  | cut -d "." -f 2)
     CSV_CALENDARS+="'./${file}#$ZONA' "
   done
-  eval "gh release create \"$year-CSV\" -t \"$year-CSV\" -n \"Calendari $year in formato CSV\" $CSV_CALENDARS"
+  if [ -z $(gh release view $year-CSV 2> /dev/null | cat) ]
+  then  
+    eval "gh release create \"$year-CSV\" -t \"$year-CSV\" -n \"Calendari $year in formato CSV\" $CSV_CALENDARS"
+  fi
 done
