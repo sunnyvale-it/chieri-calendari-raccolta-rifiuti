@@ -17,6 +17,7 @@ do
   else
     echo "Release $year-ICS already present, skipping..."
   fi
+  rm CSVs/${year}/*.ics
 done
 
 sleep 20
@@ -36,4 +37,5 @@ do
   else
     echo "Release $year-CSV already present, skipping..."
   fi
+  rm CSVs/${year}/*.csv
 done
