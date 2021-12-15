@@ -3,7 +3,8 @@
 declare -a zones=($(cat comuni.txt | tr  '[a-z]' '[A-Z]' | sed 's/ //g'))
 
 declare -a years=(
-"2021"
+"2021",
+"2022"
 )
 
 for year in "${years[@]}"
