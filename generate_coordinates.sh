@@ -10,6 +10,6 @@ export export IFS=$'\n'
 for comune in $(cat comuni.txt);
 do
   export FILENAME=$(echo ${comune} | tr  '[a-z]' '[A-Z]' | sed 's/ //g')_${ANNO}_coordinates.csv;
-  echo "cp coordinates/coordinates_template.csv coordinates/$ANNO/$FILENAME"
+  echo "cp -n coordinates/coordinates_template.csv coordinates/$ANNO/$FILENAME"
   cp -n coordinates/coordinates_template.csv coordinates/$ANNO/$FILENAME
 done;
