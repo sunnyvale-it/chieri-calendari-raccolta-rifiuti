@@ -21,11 +21,11 @@ do
   for year in "${years[@]}"
   do
     mkdir -p PDFs/$year
-    curl -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
+    curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
     if test -s PDFs/$year/${zone}_${year}.pdf; then
       echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
     else
-      curl -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+      curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
       if test -s PDFs/$year/${zone}_${year}.pdf; then
         echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
       fi
