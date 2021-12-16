@@ -3,6 +3,7 @@
 declare -a zones=($(cat comuni.txt | tr  '[a-z]' '[A-Z]' | sed 's/ //g'))
 
 declare -a years=(
+"2021"
 "2022"
 )
 
@@ -20,11 +21,11 @@ do
   for year in "${years[@]}"
   do
     mkdir -p PDFs/$year
-    curl -v -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
+    curl -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
     if test -s PDFs/$year/${zone}_${year}.pdf; then
       echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
     else
-      curl -v -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+      curl -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
       if test -s PDFs/$year/${zone}_${year}.pdf; then
         echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
       fi
