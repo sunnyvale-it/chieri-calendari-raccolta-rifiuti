@@ -21,13 +21,15 @@ do
   for year in "${years[@]}"
   do
     mkdir -p PDFs/$year
-    curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
-    if test -s PDFs/$year/${zone}_${year}.pdf; then
-      echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
-    else
-      curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+    if test -s "PDFs/$year/${zone}_${year}.*"; then
+      curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
       if test -s PDFs/$year/${zone}_${year}.pdf; then
-        echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
+        echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
+      else
+        curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+        if test -s PDFs/$year/${zone}_${year}.pdf; then
+          echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
+        fi
       fi
     fi
     if test -f "PDFs/${year}/${zone}_${year}.pdf" && test -f "coordinates/${year}/${zone}_${year}_coordinates.csv"; then
