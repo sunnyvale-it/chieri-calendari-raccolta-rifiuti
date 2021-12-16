@@ -35,4 +35,4 @@ Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/READM
 
 ---
 Questa pagina è stata creata dinamicamente da GitHub Action ![build](https://img.shields.io/github/workflow/status/sunnyvale-it/chieri-calendari-raccolta-rifiuti/update)  
-Ultimo aggiornamento: ⚡Thu Dec 16 00:30:17 UTC 2021⚡
+Ultimo aggiornamento: ⚡Thu Dec 16 00:38:27 UTC 2021⚡
