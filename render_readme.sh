@@ -12,6 +12,7 @@ do
   done
 done
 )
+rm -r ICSs/*
 
 export CSV_CALENDARS=$(
 for year in $(cd CSVs/ && find * -type d);
@@ -23,6 +24,7 @@ do
   done
 done
 )
+rm -r CSVs/*
 
 #echo "$ICS_CALENDARS"
 perl -p -i -e "s/^Ultimo aggiornamento:.*$/Ultimo aggiornamento: $PAGE_UPDATE_TIMESTAMP/g" ./README.md
