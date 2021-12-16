@@ -3,7 +3,7 @@
 export PAGE_UPDATE_TIMESTAMP="⚡$(date)⚡"
 
 export ICS_CALENDARS=$(
-for year in $(cd ICSs/ && find * -type d);
+for year in $(cd ICSs/ && find * -type d | sort -nr);
 do
   echo -e "#### Anno $year"
   for file in $(cd ICSs/${year} && find *.ics -type f);
@@ -12,9 +12,10 @@ do
   done
 done
 )
+rm -r ICSs/*
 
 export CSV_CALENDARS=$(
-for year in $(cd CSVs/ && find * -type d);
+for year in $(cd CSVs/ && find * -type d | sort -nr);
 do
   echo -e "#### Anno $year"
   for file in $(cd CSVs/${year} && find *.csv -type f);
@@ -23,6 +24,7 @@ do
   done
 done
 )
+rm -r CSVs/*
 
 #echo "$ICS_CALENDARS"
 perl -p -i -e "s/^Ultimo aggiornamento:.*$/Ultimo aggiornamento: $PAGE_UPDATE_TIMESTAMP/g" ./README.md

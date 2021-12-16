@@ -4,6 +4,7 @@ declare -a zones=($(cat comuni.txt | tr  '[a-z]' '[A-Z]' | sed 's/ //g'))
 
 declare -a years=(
 "2021"
+"2022"
 )
 
 for year in "${years[@]}"
@@ -20,9 +21,16 @@ do
   for year in "${years[@]}"
   do
     mkdir -p PDFs/$year
-    curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
-    if test -f PDFs/$year/${zone}_${year}.pdf; then
-      echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
+    if test -s "PDFs/$year/${zone}_${year}.*"; then
+      curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
+      if test -s PDFs/$year/${zone}_${year}.pdf; then
+        echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
+      else
+        curl -s -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+        if test -s PDFs/$year/${zone}_${year}.pdf; then
+          echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
+        fi
+      fi
     fi
     if test -f "PDFs/${year}/${zone}_${year}.pdf" && test -f "coordinates/${year}/${zone}_${year}_coordinates.csv"; then
       echo "Processing file PDFs/${year}/${zone}_${year}.pdf using coordinates from coordinates/${year}/${zone}_${year}.csv"

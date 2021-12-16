@@ -40,18 +40,37 @@
                     </execution>
                 </executions>
             </plugin>
-           <!-- <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>Main</mainClass>
-                        </manifest>
-                    </archive>
+                    <executable>java</executable>
+                    <arguments>
+                        <!-- Java arguments -->
+                        <argument></argument>
+                        <!-- Classpath -->
+                        <argument>-classpath</argument>
+                        <classpath/>
+                        <!-- Main class -->
+                        <argument>it.sunnyvale.chieriraccoltarifiuti.Main</argument>
+                        <!-- Class arguments-->
+                        <argument>ANDEZENO</argument>
+                        <argument>PDFs/2022/ANDEZENO_2022.pdf</argument>
+                        <argument>coordinates/2022/ANDEZENO_2022_coordinates.csv</argument>
+                        <argument>2022</argument>
+                        <argument>CSVs/2022</argument>
+                        <argument>ICSs/2022</argument>
+                    </arguments>
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
@@ -97,5 +116,7 @@
             <version>1.7.30</version>
         </dependency>
     </dependencies>
+
+
 
 </project>
