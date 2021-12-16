@@ -56,6 +56,7 @@ jobs:
           git checkout "${GITHUB_REF}"
           git add CSVs
           git add ICSs
+          git add PDFs
           git add README.md
           git commit -am "Update dynamic content"
       - name: Push changes
