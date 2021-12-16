@@ -2,7 +2,8 @@
 
 Fonte: [Consorzio Chierese per i Servizi](http://www.ccs.to.it/calendari-raccolta)
 ## Calendari disponibili
-Qui sotto puoi trovare il link ai calendari nei vari formati. Se ti servono calendari di anni passati, puoi cercarli tra le [releases](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases)
+Qui sotto puoi trovare i link ai calendari nei vari formati. 
+Se ti servono calendari di anni passati, puoi cercarli tra le [releases](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases).
 
 ### Formato iCalendar compatibile con Google Calendar, MacOS Calendar, iOS Calendar, Zimbra
 #### Anno 2022
