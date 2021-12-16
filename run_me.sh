@@ -22,8 +22,13 @@ do
   do
     mkdir -p PDFs/$year
     curl -v -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.pdf\&t\=raccolta
-    if test -f PDFs/$year/${zone}_${year}.pdf; then
+    if test -s PDFs/$year/${zone}_${year}.pdf; then
       echo "PDF file PDFs/$year/${zone}_${year}.pdf downloaded"
+    else
+      curl -v -o PDFs/$year/${zone}_${year}.pdf http://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php\?a\=${year}\&f\=${zone}.PDF\&t\=raccolta
+      if test -s PDFs/$year/${zone}_${year}.pdf; then
+        echo "PDF file PDFs/$year/${zone}_${year}.PDF downloaded"
+      fi
     fi
     if test -f "PDFs/${year}/${zone}_${year}.pdf" && test -f "coordinates/${year}/${zone}_${year}_coordinates.csv"; then
       echo "Processing file PDFs/${year}/${zone}_${year}.pdf using coordinates from coordinates/${year}/${zone}_${year}.csv"
