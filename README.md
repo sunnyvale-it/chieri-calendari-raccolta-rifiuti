@@ -238,4 +238,4 @@ Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/READM
 
 
 Questa pagina è stata creata dinamicamente da GitHub Action [![update](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml/badge.svg)](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml)  
-Ultimo aggiornamento: ⚡Wed Dec 28 17:02:42 UTC 2022⚡
+Ultimo aggiornamento: ⚡Wed Dec 28 17:23:58 UTC 2022⚡
