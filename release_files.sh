@@ -17,6 +17,7 @@ do
   else
     echo "Release $year-ICS already present, skipping..."
   fi
+  export ICS_CALENDARS=""
 done
 
 sleep 20
@@ -36,4 +37,5 @@ do
   else
     echo "Release $year-CSV already present, skipping..."
   fi
+  export CSV_CALENDARS=""
 done
