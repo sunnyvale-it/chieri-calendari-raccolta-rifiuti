@@ -237,5 +237,5 @@ Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/READM
 [Creative Commons - Attribuzione 4.0 Internazionale (CC BY 4.0s)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
-Questa pagina è stata creata dinamicamente da GitHub Action ![build](https://img.shields.io/github/workflow/status/sunnyvale-it/chieri-calendari-raccolta-rifiuti/update)  
+Questa pagina è stata creata dinamicamente da GitHub Action [![update](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml/badge.svg)](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml)  
 Ultimo aggiornamento: ⚡Thu Dec 16 13:53:39 UTC 2021⚡

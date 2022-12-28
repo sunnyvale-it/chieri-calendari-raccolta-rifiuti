@@ -21,7 +21,6 @@ do
   for year in "${years[@]}"
   do
     mkdir -p PDFs/$year
-    echo "PDFs/${year}/${zone}_${year}.*"
     if [ ! -s "PDFs/${year}/${zone}_${year}.*" ]; then
       echo "Downloading from https://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php?a=${year}&f=${zone}.pdf&t=raccolta"
       curl -lsk --retry 5 --retry-max-time 120 --max-time 30 -o PDFs/${year}/${zone}_${year}.pdf "https://www.ccs.to.it/flex/Extensions/appCCSCalendario/pages/serveDownload.php?a=${year}&f=${zone}.pdf&t=raccolta"
