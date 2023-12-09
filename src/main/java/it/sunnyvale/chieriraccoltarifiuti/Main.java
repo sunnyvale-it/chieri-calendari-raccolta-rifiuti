@@ -31,7 +31,7 @@ public class Main {
 
         int daysOffset = 0;
 
-        if(args.length >= 7 ){
+        if(args.length == 7 ){
             hoursOffset = Integer.parseInt(args[6]);
         }
 
