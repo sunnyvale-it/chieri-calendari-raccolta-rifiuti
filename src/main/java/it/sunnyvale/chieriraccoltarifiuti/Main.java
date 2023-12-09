@@ -27,6 +27,18 @@ public class Main {
         String outputCSVPath = args[4];
         String outputICSPath = args[5];
 
+        int hoursOffset = 0;
+
+        int daysOffset = 0;
+
+        if(args.length >= 7 ){
+            hoursOffset = Integer.parseInt(args[6]);
+        }
+
+        if(args.length == 8 ){
+            daysOffset = Integer.parseInt(args[7]);
+        }
+
         Coordinates[] coordinatesArray = CoordinatesUtils.readCoordinatesFromCSV(inputCoordinatesFilePath);
 
         CSVUtils csvUtils = new CSVUtils("Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Location");
@@ -63,9 +75,10 @@ public class Main {
                         int day = Integer.parseInt(m.group(1));
 
                         LocalDateTime ldt = LocalDateTime.from(LocalDate.of(year, coordinates.getId(), day).atStartOfDay())
-                                //.minusDays(1)
                                 .withHour(coordinates.getCollectionTime().getHour())
-                                .withMinute(coordinates.getCollectionTime().getMinute());
+                                .withMinute(coordinates.getCollectionTime().getMinute())
+                                .plusHours(hoursOffset)
+                                .plusDays(daysOffset);
 
                         String collection = m.group(3);
 
