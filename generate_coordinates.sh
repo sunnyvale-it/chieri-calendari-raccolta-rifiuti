@@ -7,6 +7,7 @@ if [ $# -eq 0 ]
 fi
 export ANNO=$1
 export export IFS=$'\n'
+mkdir -p coordinates/$ANNO
 for comune in $(cat comuni.txt);
 do
   export FILENAME=$(echo ${comune} | tr  '[a-z]' '[A-Z]' | sed 's/ //g')_${ANNO}_coordinates.csv;
