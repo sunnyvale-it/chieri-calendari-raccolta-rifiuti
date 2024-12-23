@@ -25,6 +25,18 @@ Creare un nuovo "feature branch" dove risiederanno le modifiche per i calendari 
 $ git checkout -b feature/calendari-$NUOVO_ANNO
 ```
 
+Modificare il file `run_me.sh` nella parte alta, inserendo il nuovo anno e mantenendo SOLO quello precedente. E' necessario rimuovere l'anno più vecchio per fare in modo che vengano gestite solamente 2 annualità.
+
+es:
+
+```bash
+# Mantenere gli ultimi due anni (quello nuovo e quello precedente)
+declare -a years=(
+"2023"
+"2024"
+)
+```
+
 Qualora il Consorzio Chierese avesse aggiunto un nuovo comune o riorganizzato le zone di raccolta, aggiornare la lista dei comuni nel file [comuni.txt](../../comuni.txt).
 
 Creare il file con le coordinate per il nuovo anno
