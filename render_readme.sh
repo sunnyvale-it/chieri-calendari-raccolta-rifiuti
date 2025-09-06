@@ -3,7 +3,7 @@
 export PAGE_UPDATE_TIMESTAMP="⚡$(date)⚡"
 
 export ICS_CALENDARS=$(
-for year in $(cd PDFs/ && find * -type d | sort -nr);
+for year in $(cd PDFs/ && find * -type d | sort -nr | head -2);
 do
   echo -e "#### Anno $year"
   for file in $(cd PDFs/${year} && find *.* -type f | cut -d . -f 1);
@@ -15,7 +15,7 @@ done
 rm -r ICSs/*
 
 export CSV_CALENDARS=$(
-for year in $(cd CSVs/ && find * -type d | sort -nr);
+for year in $(cd PDFs/ && find * -type d | sort -nr | head -2);
 do
   echo -e "#### Anno $year"
   for file in $(cd PDFs/${year} && find *.* -type f | cut -d . -f 1);
