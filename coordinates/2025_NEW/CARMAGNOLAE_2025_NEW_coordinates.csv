@@ -1,4 +1,0 @@
-#left,top,with,height,label,id,regexp,collection_time,all_day_event,days_offest,hours_offset,mins_offset
-21.07,162.48,155.27,311.49,ottobre,10,(^\d*) (\S*) (.*$),07:00,true,0,0,0
-181.81,162.48,155.27,311.49,novembre,11,(^\d*) (\S*) (.*$),07:00,true,0,0,0
-344.91,162.48,155.27,311.49,dicembre,12,(^\d*) (\S*) (.*$),07:00,true,0,0,0

@@ -2,13 +2,8 @@ Andezeno
 Arignano
 Baldissero 1
 Baldissero 2
-Cambiano
-Carmagnola A
-Carmagnola B
-Carmagnola C
-Carmagnola D
-Carmagnola E
-Carmagnola F
+Cambiano 1
+Cambiano 2
 Chieri 1A
 Chieri 1B
 Chieri 2A
@@ -21,7 +16,6 @@ Chieri 5A
 Chieri 5B
 Chieri 6A
 Chieri 6B
-Isolabella
 Marentino
 Mombello
 Moncucco
@@ -35,15 +29,6 @@ Pino 2A
 Pino 2B
 Pino 3B
 Pino 4B
-Poirino case sparse A
-Poirino case sparse B
-Poirino case sparse C
-Poirino case sparse D
-Poirino concentrico A
-Poirino concentrico B
-Poirino concentrico C
-Poirino concentrico D
-Pralormo
 Riva presso Chieri
 Santena 1
 Santena 2
