@@ -31,18 +31,21 @@ es:
 
 ```bash
 # Mantenere gli ultimi due anni (quello nuovo e quello precedente)
-declare -a years=(
-"2023"
-"2024"
+declare -A years=(
+["2023"]="2023"
+["2024"]="2024"
 )
 ```
+
+L'array associativo è formato in modo che la chiave sia l'etichetta che verrà utilizzata per dare un nome alla release, il valore invece costituisce l'anno come definito sul sito della raccolta rifiuti.
+Sebbene spesso la chiave ed il valore corrispondano, distinguerli ci da la possibilità di separare le due informazioni, nel caso in cui l'anno della release NON corrisponda con l'annualità definita dal Consorzio (ad esempio chiave=2025_NEW, valore=2026).
 
 Qualora il Consorzio Chierese avesse aggiunto un nuovo comune o riorganizzato le zone di raccolta, aggiornare la lista dei comuni nel file [comuni.txt](../../comuni.txt).
 
 Creare il file con le coordinate per il nuovo anno
 
 ```console
-$ cp coordinates/coordinates_template_`expr $NUOVO_ANNO - 1`.csv coordinates/coordinates_template_$NUOVO_ANNO.csv
+$ cp coordinates/coordinates_template_2023.csv coordinates/coordinates_template_$NUOVO_ANNO.csv
 ```
 
 Ipotizzando che si stia creando il file di coordinate per l'anno 2024, controllare che dopo il comando appena eseguito sia presente il file `coordinates/coordinates_template_2024.csv`.

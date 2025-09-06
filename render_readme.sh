@@ -3,24 +3,24 @@
 export PAGE_UPDATE_TIMESTAMP="⚡$(date)⚡"
 
 export ICS_CALENDARS=$(
-for year in $(cd ICSs/ && find * -type d | sort -nr);
+for year in $(cd PDFs/ && find * -type d | sort -nr | head -2);
 do
   echo -e "#### Anno $year"
-  for file in $(cd ICSs/${year} && find *.ics -type f);
+  for file in $(cd PDFs/${year} && find *.* -type f | cut -d . -f 1);
   do
-    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-ICS/$file)"
+    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-ICS/$file.ics)"
   done
 done
 )
 rm -r ICSs/*
 
 export CSV_CALENDARS=$(
-for year in $(cd CSVs/ && find * -type d | sort -nr);
+for year in $(cd PDFs/ && find * -type d | sort -nr | head -2);
 do
   echo -e "#### Anno $year"
-  for file in $(cd CSVs/${year} && find *.csv -type f);
+  for file in $(cd PDFs/${year} && find *.* -type f | cut -d . -f 1);
   do
-    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-CSV/$file)"
+    echo "- [$file](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/${year}-CSV/$file.csv)"
   done
 done
 )
