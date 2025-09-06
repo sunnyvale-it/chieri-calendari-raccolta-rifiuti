@@ -45,10 +45,7 @@ public class Main {
         ICSUtils icsUtils = new ICSUtils(zone,year);
 
         try {
-
             for (Coordinates coordinates : coordinatesArray) {
-
-
                 FileInputStream inputStream = new FileInputStream(inputPDFFilePath);
                 byte[] pdfBytes = IOUtils.toByteArray(inputStream);
                 PDDocument pddDoc = PDDocument.load(pdfBytes);
@@ -90,8 +87,8 @@ public class Main {
                 pddDoc.close();
 
             }
-            csvUtils.toFile(outputCSVPath + System.getProperty("file.separator") + zone + "_" + year + ".csv");
-            icsUtils.toFile(outputICSPath + System.getProperty("file.separator") + zone + "_" + year + ".ics");
+            csvUtils.toFile(outputCSVPath + System.getProperty("file.separator") + zone + "_" + outputCSVPath.split("/")[1] + ".csv");
+            icsUtils.toFile(outputICSPath + System.getProperty("file.separator") + zone + "_" + outputICSPath.split("/")[1] + ".ics");
         } catch (IOException e) {
             e.printStackTrace();
         }

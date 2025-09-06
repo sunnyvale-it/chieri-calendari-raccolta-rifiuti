@@ -9,11 +9,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 public class CoordinatesUtils {
 
     public static Coordinates[] readCoordinatesFromCSV(String fileName) {
-        Coordinates[] coordinatesArray = new Coordinates[12];
+        ArrayList<Coordinates> coordinatesArrayList = new ArrayList<>();
          Path pathToFile = Paths.get(fileName);
          try (BufferedReader br = Files.newBufferedReader(pathToFile, StandardCharsets.US_ASCII)) {
              String line = br.readLine();
@@ -25,14 +26,14 @@ public class CoordinatesUtils {
                  }
                  String[] attributes = line.split(",");
                  Coordinates coordinates = createCoordinates(attributes);
-                 coordinatesArray[i]=coordinates;
+                 coordinatesArrayList.add(coordinates);
                  i++;
                  line = br.readLine();
              }
          } catch (IOException ioe) {
              ioe.printStackTrace();
          }
-         return coordinatesArray;
+         return coordinatesArrayList.toArray(new Coordinates[0]);
     }
 
     public static Coordinates createCoordinates(String[] line) {
