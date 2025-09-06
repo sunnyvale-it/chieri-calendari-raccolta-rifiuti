@@ -6,6 +6,7 @@ Qui sotto puoi trovare i link ai calendari nei vari formati.
 Se ti servono calendari di anni passati, puoi cercarli tra le [releases](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases).
 
 ### Formato iCalendar compatibile con Google Calendar, MacOS Calendar, iOS Calendar, Zimbra
+#### Anno 2026
 #### Anno 2025
 - [ANDEZENO_2025.ics](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-ICS/ANDEZENO_2025.ics)
 - [ARIGNANO_2025.ics](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-ICS/ARIGNANO_2025.ics)
@@ -58,6 +59,7 @@ Se ti servono calendari di anni passati, puoi cercarli tra le [releases](https:/
 - [SANTENA2_2025.ics](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-ICS/SANTENA2_2025.ics)
 - [SANTENA3_2025.ics](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-ICS/SANTENA3_2025.ics)
 ### Formato MS Outlook
+#### Anno 2026
 #### Anno 2025
 - [ANDEZENO_2025.csv](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-CSV/ANDEZENO_2025.csv)
 - [ARIGNANO_2025.csv](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases/download/2025-CSV/ARIGNANO_2025.csv)
@@ -136,4 +138,4 @@ Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/READM
 
 
 Questa pagina è stata creata dinamicamente da GitHub Action [![update](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml/badge.svg)](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml)  
-Ultimo aggiornamento: ⚡Sat Sep  6 10:48:16 UTC 2025⚡
+Ultimo aggiornamento: ⚡Sat Sep  6 11:11:22 UTC 2025⚡
