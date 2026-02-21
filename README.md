@@ -1,15 +1,15 @@
 # Calendari elettronici per la raccolta rifiuti di Chieri e zone limitrofe
 
 Fonte: [Consorzio Chierese per i Servizi](http://www.ccs.to.it/calendari-raccolta)
+
+> ⚠️ **Attenzione:** La versione di febbraio 2026 introduce i seguenti aggiornamenti:
+> - Aggiornato il calendario raccolta di Riva Presso Chieri (valido dal 5 febbraio 2026)
+> - Aggiunti i comuni di Carmagnola (zone A-F), Isolabella, Poirino Case Sparse (zone A-D), Poirino Concentrico (zone A-D), Pralormo
+> I nuovi calendari sono disponibili per il download sotto l'annualità **2026_NEW**
+
 ## Calendari disponibili
 Qui sotto puoi trovare i link ai calendari nei vari formati. 
 Se ti servono calendari di anni passati, puoi cercarli tra le [releases](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/releases).
-
-> ⚠️ **Attenzione:** Il Consorzio Chierese per i Servizi ha variato i calendari di raccolta per i mesi OTTOBRE, NOVEMBRE e DICEMBRE 2025.
-> 
-> I nuovi calendari sono disponibili per il download sotto l'annualità **2025_NEW**
-
-![](img/warning_2025_new.png)
 
 ### Formato iCalendar compatibile con Google Calendar, MacOS Calendar, iOS Calendar, Zimbra
 #### Anno 2026
@@ -182,6 +182,11 @@ Ulteriori informazioni tecniche sono disponibili a [questo link](docs/devs/READM
 ## Licenza
 [Creative Commons - Attribuzione 4.0 Internazionale (CC BY 4.0s)](https://creativecommons.org/licenses/by/4.0/)
 
+## Disclaimer
+Le informazioni e i dati forniti sono messi a disposizione esclusivamente a scopo informativo. 
+L’azienda Sunnyvale S.r.l. non garantisce l’accuratezza, la completezza o l’aggiornamento dei dati e declina ogni responsabilità per eventuali errori, omissioni o inesattezze.
+L’azienda Sunnyvale S.r.l. non potrà in alcun caso essere ritenuta responsabile per danni diretti, indiretti, incidentali o consequenziali derivanti dall’utilizzo, dall’affidamento o dall’impossibilità di utilizzare le informazioni o i dati forniti.
+L’utilizzo delle informazioni avviene sotto la piena ed esclusiva responsabilità dell’utente.
 
 Questa pagina è stata creata dinamicamente da GitHub Action [![update](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml/badge.svg)](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml)  
 Ultimo aggiornamento: ⚡Tue Dec 23 08:37:19 UTC 2025⚡
