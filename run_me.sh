@@ -4,8 +4,8 @@ declare -a zones=($(cat comuni.txt | tr  '[a-z]' '[A-Z]' | sed 's/ //g'))
 
 # Mantenere gli ultimi due anni (quello nuovo e quello precedente)
 declare -A years=(
-["2025_NEW"]="2026"
 ["2026"]="2026"
+["2026_NEW"]="2026"
 )
 
 for year in "${!years[@]}"
