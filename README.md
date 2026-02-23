@@ -5,7 +5,7 @@ Fonte: [Consorzio Chierese per i Servizi](http://www.ccs.to.it/calendari-raccolt
 > ⚠️ **Attenzione:** La versione di febbraio 2026 introduce i seguenti aggiornamenti:
 > - Aggiornato il calendario raccolta di Riva Presso Chieri (valido dal 5 febbraio 2026)
 > - Aggiunti i comuni di Carmagnola (zone A-F), Isolabella, Poirino Case Sparse (zone A-D), Poirino Concentrico (zone A-D), Pralormo
->
+> - Risolti alcuni problemi che causavano la mancata lettura dei conferimenti nei giorni 31 dei vari mesi 
 > I nuovi calendari sono disponibili per il download sotto l'annualità **2026_NEW**
 
 ## Calendari disponibili
