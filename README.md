@@ -254,4 +254,4 @@ L’azienda Sunnyvale S.r.l. non potrà in alcun caso essere ritenuta responsabi
 L’utilizzo delle informazioni avviene sotto la piena ed esclusiva responsabilità dell’utente.
 
 Questa pagina è stata creata dinamicamente da GitHub Action [![update](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml/badge.svg)](https://github.com/sunnyvale-it/chieri-calendari-raccolta-rifiuti/actions/workflows/workflow.yaml)  
-Ultimo aggiornamento: ⚡Sat Feb 21 21:38:05 UTC 2026⚡
+Ultimo aggiornamento: ⚡Mon Feb 23 11:01:12 UTC 2026⚡
